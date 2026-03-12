@@ -41,3 +41,31 @@ public class Main {
      }
     }
 }
+
+//exercicio 3
+import java.util.Scanner;
+public class Main {
+  public static void main(String args[]) {
+Scanner e=new Scanner(System.in);
+System.out.println("qual seu periodo de aula?");
+
+System.out.println("M- matutino");
+System.out.println("V - vespertino");
+System.out.println("N- nortuno");
+String periodo = e.nextLine();
+
+switch (periodo) {
+    
+    case ("M"): 
+        System.out.print("Bom dia" );
+        break;
+        
+    case ("V"): 
+        System.out.print("boa tarde");
+        break;
+        
+    case ("N") :
+        System.out.print("boa noite");
+}
+  }
+}
