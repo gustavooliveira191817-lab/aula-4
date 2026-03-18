@@ -216,6 +216,69 @@ public class Main {
 
             }
         }
+// exercicio 6
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("================================================================");
+        System.out.println("Bem vindo ao cardápio!");
+        System.out.println("Digite o codigo do produto desejado e sua a quantidade:");
+        System.out.println("Código:100-Chachorro Quente-R$ 1,20");
+        System.out.println("Código:101-Bauru Simples-R$ 1,30");
+        System.out.println("Código:102-Bauru com ovo-R$ 1,50");
+        System.out.println("Código:103-Hambúrguer-R$ 1,20");
+        System.out.println("Código:104-Cheeseburguer-R$ 1,30");
+        System.out.println("Código:105-Refrigerante-R$ 1,00");
+        System.out.println("================================================================");
+
+        System.out.print("Digite o código desejado:");
+        int codigo = sc.nextInt();
+        System.out.print("Digite a quantidade desejada:");
+        int quantidade = sc.nextInt();
+
+        double total = 0;
+
+        switch (codigo) {
+            case 100:
+                total = 1.20 * quantidade;
+                break;
+
+            case 101:
+                total = 1.30 * quantidade;
+                break;
+
+            case 102:
+                total = 1.50 * quantidade;
+                break;
+
+            case 103:
+                total = 1.20 * quantidade;
+                break;
+
+            case 104:
+                total = 1.30 * quantidade;
+                break;
+
+            case 105:
+                total = 1.00 * quantidade;
+                break;
+            default:
+                System.out.println("Código inválido.");
+                return;
+        }
+        System.out.println("Quantidade: " + quantidade);
+        System.out.println("O valor da sua compra é: "+ total);
+        if (quantidade==0){
+            System.out.println("Compra inválida.");
+            else if (quantidade <= 0)
+                System.out.println("Quantidade inválida:");
+        }
+    sc.close();
+    }
+}
         e.close();
     }
 }
